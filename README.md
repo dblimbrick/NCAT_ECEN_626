@@ -1,1 +1,1 @@
-# NCAT_ECEN_626
+# NCAT ECEN 626: Electronic Design Automation
