@@ -1,1 +1,13 @@
-
+Following pages 26-27 from the Yosys manual, run the following commands:
+yosys
+read_verilog c17.v 
+proc
+opt
+memory
+opt
+techmap
+opt
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog c17_synth.v
+exit
